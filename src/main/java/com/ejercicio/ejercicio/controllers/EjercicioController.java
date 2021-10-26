@@ -14,7 +14,7 @@ public class EjercicioController {
     @Autowired
     private ejercicioDao ejercicioDao;
 
-    @RequestMapping(value = "api/ejercicios")
+    @RequestMapping(value = "api/ejercicios", method = RequestMethod.GET)
     public List<Ejercicio> getEjercicios(){
 
        return  ejercicioDao.getEjercicio();
